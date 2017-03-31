@@ -1,0 +1,9 @@
+
+case $OSTYPE in
+	darwin*)
+		open -a Google\ Chrome $url
+	;;
+	linux*)
+		chromium $url
+	;;
+esac

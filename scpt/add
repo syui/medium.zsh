@@ -1,0 +1,15 @@
+export d=${0:a:h}
+export l=${d:h}
+export t=${l:t}
+export scpt=$d
+export json=$l/json
+export conf=$l/medium.json
+export token=$json/token.json
+export refresh=$json/refresh.json
+export muser=$json/user.json
+export error=$scpt/error.zsh
+
+if [ -f $l/.medium.json ];then
+	export conf=$l/.medium.json
+fi
+
